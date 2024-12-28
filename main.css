@@ -1,0 +1,350 @@
+*{
+    background: color #d3d3d3;;
+    margin-left: 5px, 10px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #4b0082; /* Add background color to the navbar */
+}
+
+/* Styling for the logo icon */
+.logo img {
+    height: auto;
+    width: 100px; /* Set width of the logo */
+    max-width: 100%; 
+    display: block; /* To Remove any unwanted space below the image */
+}
+
+/* Styles for the buttons */
+.links > button {
+    margin-right: 2rem;
+    padding: 10px 20px; /* Adjust padding for better button appearance */
+    border: 2px solid #c8a2cb; /* Fix border color */
+    border-radius: 8px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: purple;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Styling for links inside buttons */
+.links > button a {
+    color: white;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+/* Hover effect for buttons */
+.links > button:hover {
+    background-color: #c8a2cb; /* Change background color on hover */
+}
+
+/* Optional: Make buttons display inline-block for better layout control */
+.links > button {
+    display: inline-block;
+}
+
+/* Styling the box for the two videos (1 youtube video & 1 local file video*/
+.media-box {
+    width: 1280px;
+    height: 450px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    border-radius: 8px;
+    border: 4px solid purple;
+    background: linear-gradient(to right, orchid, #ccccff); /* style for the transforming color of the bg */
+    display: flex;
+    justify-content: space-around;
+    padding: 25px; 
+    color: #c8a2c8; 
+}
+
+
+/* styles mainly for the video */
+.first-video,
+.second-video{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-bottom: 2px;
+    padding-top: 3px;
+    top: 0;
+    left: 0;
+    
+}
+
+.video1{
+    width: 600px;
+    height: 350px;
+}
+
+
+/* For the video title i.e the information*/
+.video1-title,
+.video2-title{
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgba(37, 6, 37, 0.774);
+    padding-bottom: 2px;
+}
+
+/* for the video number of viewers */
+.video1-stats,
+.video2-stats{
+    font-size:  18px;
+    font-weight: lighter;
+    line-height: 65px;
+    padding: 2px;
+}
+
+/* Video2 size*/
+.video2{
+    width: 600px;
+    height: 350px;
+}
+
+/* style for the project table named [Projects}*/
+.Projects{
+    text-decoration: double;
+    font-size: 24px;
+    text-shadow: 2px;
+    text-decoration: double;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: purple;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+
+/* style for the table entirely */
+table{
+    width: 900px;
+    height: 100px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/*Style for the table heading */
+.Works thead tr{
+    background-color: #ccccff;
+    color:#4b0082; 
+    text-align: center;
+    text-transform: uppercase;
+    border:1px solid #b61616;
+    border-collapse: separate;
+}
+
+
+/* style for the table datas i.e cells under headings*/
+.Works tbody tr{
+    background-color:whitesmoke;
+    border-collapse: separate;
+    color: #8787be;
+    text-align:center;
+
+}
+
+/* |Style for the contact text */
+.Contact{
+    font-size: 24px;
+    text-shadow: 2px;
+    text-decoration: double;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: purple;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+
+/* sytling for the contact table */
+.Contact-us thead tr{
+    background-color: #ccccff;
+    color:#4b0082;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #b61616;
+    border-collapse: separate;
+}
+
+.Contact-us tbody tr{
+    background-color: whitesmoke;
+    border-collapse: separate;
+    color: #8787be;
+    text-align: center;
+}
+
+
+.My-Resume{
+    text-decoration: double;
+    font-size: 24px;
+    text-shadow: 2px;
+    text-decoration: double;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: purple;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.Contact 
+body {
+    background-color: #f4f4f9;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: purple;
+}
+
+/* Register body containning all elements of forms */
+.Register {
+    background-color: orchid;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Title Style */
+.Register .data {
+    text-align: center;
+    color: purple;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 14px;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form input[type="range"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #c8a2cb;
+    border-radius: 7px;
+    outline: none;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form input[type="range"]:focus {
+    border-color: #c8a2cb;
+}
+
+/* Textarea specific styles */
+form textarea {
+    resize: vertical;
+}
+
+/* Button Styles */
+form button {
+    width: 120px;
+    height: 55px;
+    background-color: purple;
+    color: #fff;
+    border: solid orchid;
+    padding: 8px 12px;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: progress;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color:linear-gradient rgba(37, 6, 37, 0.774) ;
+}
+
+/* Marquee Styles */
+marquee {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: orchid;
+    font-style: italic;
+    background-color: #ccccff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* General styling  */
+body {   
+    background-color: #f6f2f9; /* Light purple background */
+    margin: 0;
+    padding: 0;
+    color: #4a2c72; /* Dark purple text for the body */
+}
+
+/* Farewell Container */
+.Farewell {
+    background-color: #ffffff; /* White background for the Farewell div */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #d0b6e8; /* Light purple border */
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+/* Farewell Text Styles */
+.Farewell p {
+    font-size: 18px;
+    color: #6a3d8f; /* Medium purple for general text */
+    margin: 10px 0;
+}
+
+/* Special emphasis for last paragraph */
+.Farewell p:last-of-type {
+    font-size: 20px;
+    color: #8a4cbf; /* Darker purple for the farewell message */
+}
+
+/* Icon Styling */
+.Farewell p:last-of-type em {
+    font-size: 24px;
+    color: #8a4cbf; /* Dark purple for the icons */
+}
+
+/* Hover Effects */
+.Farewell p:hover {
+    color: #6f3b9d; /* Slightly darker purple on hover */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
